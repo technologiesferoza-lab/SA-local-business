@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f766e">
+  <meta name="description" content="Privacy Policy and Password Reset Instructions for SA Local Business.">
+  <title>Privacy Policy | SA Local Business</title>
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #f59e0b;
+      --bg: #f5f7f8;
+      --card: #ffffff;
+      --text: #172126;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 12px 35px rgba(15, 23, 42, .08);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+      padding: 56px 20px 72px;
+    }
+
+    .hero-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 46px;
+    }
+
+    .logo {
+      width: 54px;
+      height: 54px;
+      border-radius: 15px;
+      background: white;
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 25px;
+      font-weight: 800;
+      box-shadow: 0 8px 22px rgba(0,0,0,.16);
+    }
+
+    .brand-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -.02em;
+    }
+
+    .brand-subtitle {
+      font-size: .85rem;
+      opacity: .82;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin: 0 0 14px;
+      font-size: clamp(2.2rem, 6vw, 4.1rem);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0;
+      font-size: 1.08rem;
+      opacity: .9;
+    }
+
+    .date {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 999px;
+      font-size: .86rem;
+      background: rgba(255,255,255,.08);
+    }
+
+    .layout {
+      max-width: 1050px;
+      margin: -35px auto 60px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 235px 1fr;
+      gap: 24px;
+      position: relative;
+    }
+
+    .toc, .content-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .toc {
+      padding: 20px;
+      align-self: start;
+      position: sticky;
+      top: 20px;
+    }
+
+    .toc-title {
+      font-size: .78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .toc a {
+      display: block;
+      padding: 8px 0;
+      font-size: .92rem;
+    }
+
+    .content-card {
+      padding: clamp(24px, 5vw, 48px);
+    }
+
+    section {
+      scroll-margin-top: 25px;
+      padding-bottom: 34px;
+      margin-bottom: 34px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.55rem;
+      letter-spacing: -.025em;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 1.05rem;
+    }
+
+    p { margin: 0 0 13px; }
+
+    ul, ol {
+      margin: 10px 0 15px;
+      padding-left: 24px;
+    }
+
+    li { margin: 7px 0; }
+
+    .info-box {
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      border-radius: 14px;
+      padding: 17px 18px;
+      margin: 18px 0;
+    }
+
+    .warning-box {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 14px;
+      padding: 17px 18px;
+      margin: 18px 0;
+    }
+
+    .reset {
+      background: linear-gradient(180deg, #f0fdfa, #ffffff);
+      border: 1px solid #99f6e4;
+      border-radius: 16px;
+      padding: 22px;
+      margin-top: 18px;
+    }
+
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      padding: 0;
+    }
+
+    .steps li {
+      counter-increment: step;
+      position: relative;
+      padding: 13px 14px 13px 50px;
+      background: #f8fafc;
+      border-radius: 12px;
+      margin: 9px 0;
+      border: 1px solid #eef2f7;
+    }
+
+    .steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 14px;
+      top: 12px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--primary);
+      color: white;
+      font-size: .8rem;
+      font-weight: 800;
+    }
+
+    .contact {
+      background: var(--primary);
+      color: white;
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 18px;
+    }
+
+    .contact a { color: white; }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: .88rem;
+      padding: 0 20px 40px;
+    }
+
+    .back-top {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: .85rem;
+    }
+
+    @media (max-width: 780px) {
+      .hero { padding: 35px 18px 62px; }
+      .brand { margin-bottom: 35px; }
+      .layout {
+        display: block;
+        margin-top: -28px;
+        padding: 0 14px;
+      }
+      .toc {
+        position: static;
+        margin-bottom: 14px;
+      }
+      .toc a {
+        display: inline-block;
+        margin-right: 13px;
+      }
+      .content-card { padding: 25px 20px; }
+    }
+
+    @media print {
+      .toc { display: none; }
+      .layout { display: block; margin: 20px; }
+      .content-card { box-shadow: none; }
+      .hero { color: #000; background: white; padding: 20px; }
+    }
+  </style>
+</head>
+<body id="top">
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand">
+        <div class="logo" aria-label="SA Local Business logo">SA</div>
+        <div>
+          <div class="brand-name">SA Local Business</div>
+          <div class="brand-subtitle">Local businesses. Local connections.</div>
+        </div>
+      </div>
+
+      <h1>Privacy Policy</h1>
+      <p>
+        Learn how SA Local Business collects, uses, protects, and manages
+        information when you use our application.
+      </p>
+      <span class="date">Effective date: 28 September 2026</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <nav class="toc" aria-label="Privacy Policy navigation">
+      <div class="toc-title">On this page</div>
+      <a href="#information">Information We Collect</a>
+      <a href="#use">How We Use Information</a>
+      <a href="#listings">Business Listings</a>
+      <a href="#location">Location</a>
+      <a href="#security">Security</a>
+      <a href="#sharing">Information Sharing</a>
+      <a href="#reset">Password Reset</a>
+      <a href="#retention">Data Retention</a>
+      <a href="#deletion">Account Deletion</a>
+      <a href="#children">Children's Privacy</a>
+      <a href="#changes">Changes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <article class="content-card">
+
+      <section id="information">
+        <h2>1. Information We Collect</h2>
+        <p>
+          When you use SA Local Business, we may collect information needed
+          to provide and operate the application.
+        </p>
+
+        <h3>Personal Information</h3>
+        <ul>
+          <li>Full name</li>
+          <li>Email address</li>
+          <li>Phone number</li>
+          <li>Account information</li>
+        </ul>
+
+        <h3>Location Information</h3>
+        <p>
+          We may collect location information to support location-based
+          features, including helping users discover businesses and
+          displaying relevant map or location information.
+        </p>
+
+        <h3>Pictures and Photos</h3>
+        <p>
+          Users and businesses may upload pictures or photos to profiles
+          and listings. Photos that form part of a public business listing
+          may be visible to other users.
+        </p>
+
+        <h3>Password Information</h3>
+        <p>
+          Your password is used to secure your account. Passwords should
+          never be shared with other users.
+        </p>
+      </section>
+
+      <section id="use">
+        <h2>2. How We Use Your Information</h2>
+        <p>We may use collected information to:</p>
+        <ul>
+          <li>Create and manage your account</li>
+          <li>Provide and operate SA Local Business</li>
+          <li>Display business profiles and listings</li>
+          <li>Help users find businesses</li>
+          <li>Provide location and map-related features</li>
+          <li>Allow businesses to manage their profiles</li>
+          <li>Allow users to contact businesses</li>
+          <li>Display photos associated with business profiles or listings</li>
+          <li>Communicate with you about your account</li>
+          <li>Help you reset or recover your password</li>
+          <li>Maintain the security of the application</li>
+          <li>Improve the functionality and reliability of our services</li>
+        </ul>
+      </section>
+
+      <section id="listings">
+        <h2>3. Business Listings and Public Information</h2>
+        <p>
+          If you create a business profile or listing, information you
+          choose to publish may be visible to other users.
+        </p>
+        <p>
+          This may include your business name, phone number, location,
+          pictures, and other information you provide for your business
+          listing.
+        </p>
+        <div class="warning-box">
+          <strong>Please remember:</strong> Do not upload information that
+          you do not want publicly displayed as part of a business listing.
+        </div>
+      </section>
+
+      <section id="location">
+        <h2>4. Location Information</h2>
+        <p>
+          Location information may be used to provide location-based
+          functionality, including helping users discover businesses near
+          a particular location.
+        </p>
+        <p>
+          You can control location permissions through your device settings.
+          If you disable location permissions, some location-based features
+          may not function correctly.
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>5. How We Protect Your Information</h2>
+        <p>
+          We take reasonable measures to protect personal information
+          against unauthorized access, loss, misuse, or disclosure.
+        </p>
+        <p>
+          However, no internet-based service can guarantee that information
+          will always be completely secure.
+        </p>
+      </section>
+
+      <section id="sharing">
+        <h2>6. Sharing of Information</h2>
+        <p>We do not sell your personal information.</p>
+        <p>We may share information when necessary to:</p>
+        <ul>
+          <li>Provide the application's services</li>
+          <li>Operate and maintain our systems</li>
+          <li>Comply with applicable laws or legal requirements</li>
+          <li>Protect the rights, safety, and security of users and the application</li>
+        </ul>
+        <p>
+          Information that you intentionally publish as part of a public
+          business listing may be visible to other users.
+        </p>
+      </section>
+
+      <section id="reset">
+        <h2>7. Password Reset</h2>
+        <p>
+          If you forget your SA Local Business password, use the
+          <strong>Forgot Password</strong> or <strong>Reset Password</strong>
+          option available on the login screen.
+        </p>
+
+        <div class="reset">
+          <h3>Password Reset Steps</h3>
+          <ol class="steps">
+            <li>Open the SA Local Business app.</li>
+            <li>Go to the <strong>Login</strong> screen.</li>
+            <li>Select <strong>Forgot Password</strong> or <strong>Reset Password</strong>.</li>
+            <li>Enter the email address associated with your account.</li>
+            <li>Check your email for the password-reset instructions.</li>
+            <li>Follow the instructions to create a new secure password.</li>
+            <li>Return to SA Local Business and sign in with your new password.</li>
+          </ol>
+
+          <p>
+            If you do not receive the password-reset email, check your spam
+            or junk folder and make sure you entered the correct email address.
+          </p>
+
+          <div class="info-box">
+            <strong>Security reminder:</strong> Never share your password or
+            password-reset link with another person.
+          </div>
+        </div>
+      </section>
+
+      <section id="retention">
+        <h2>8. Data Retention</h2>
+        <p>
+          We retain information for as long as reasonably necessary to
+          provide our services, maintain accounts, comply with legal
+          obligations, resolve disputes, and protect our services.
+        </p>
+      </section>
+
+      <section id="deletion">
+        <h2>9. Account and Data Deletion</h2>
+        <p>
+          If you would like to request deletion of your account or personal
+          information, please contact us using the contact information below.
+        </p>
+        <p>
+          When a deletion request is processed, information may be deleted
+          or anonymized where applicable, subject to information that we are
+          required or permitted to retain by law.
+        </p>
+      </section>
+
+      <section id="children">
+        <h2>10. Children's Privacy</h2>
+        <p>
+          SA Local Business is not intended to knowingly collect personal
+          information from children without appropriate authorization.
+        </p>
+        <p>
+          If you believe that a child has provided personal information to
+          us without appropriate consent, please contact us so that we can
+          review the request.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. When changes
+          are made, we will update the effective date shown at the top of
+          this page.
+        </p>
+        <p>
+          We encourage users to review this Privacy Policy periodically.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>12. Contact Us</h2>
+        <p>
+          If you have questions about this Privacy Policy, your personal
+          information, account deletion, or password recovery, please contact us.
+        </p>
+
+        <div class="contact">
+          <strong>SA Local Business</strong>
+          <p style="margin:8px 0 0;">
+            Email:
+            <a href="mailto:YOUR-SUPPORT-EMAIL@example.com">
+              YOUR-SUPPORT-EMAIL@example.com
+            </a>
+          </p>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <div>© 2026 SA Local Business. All rights reserved.</div>
+    <a class="back-top" href="#top">Back to top ↑</a>
+  </footer>
+
+</body>
+</html>
